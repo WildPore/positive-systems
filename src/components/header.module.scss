@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Share:wght@400;700&display=swap");
+
+$color: gold;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #202020;
+  padding: 1em;
+  margin: 0;
+  font-family: "Share", sans-serif;
+}
+
+.headerLink:link {
+  color: $color;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.headerLink:visited {
+  color: $color;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar ul {
+  list-style: none;
+}
+
+.navbar ul li {
+  background-color: #202020;
+  display: inline-block;
+  padding: 10px;
+  margin-right: -1px;
+  border: 1px solid #282828;
+}
+
+.navbar ul li:hover {
+  background-color: #282828;
+}
+
+.navItemLink {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.navItemLink:visited {
+  color: $color;
+}
