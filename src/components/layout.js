@@ -23,10 +23,8 @@ const Layout = ({ pageTitle, children }) => {
         {pageTitle} | {data.site.siteMetadata.title}
       </title>
       <Header />
-      <main className={Styles.content}>
-        <h1 className={Styles.heading}>{pageTitle}</h1>
-        {children}
-      </main>
+      <h1 className={Styles.heading}>{pageTitle}</h1>
+      <main className={Styles.content}>{children}</main>
       <Footer />
     </div>
   );
