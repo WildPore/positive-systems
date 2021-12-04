@@ -1,6 +1,9 @@
+* {
+  margin: 0;
+}
+
 body {
   background-color: #282628;
-  margin: 0;
 }
 
 .container {
@@ -13,6 +16,15 @@ body {
 
 .content {
   flex: 1;
+  max-width: 50%;
+  margin: auto;
+}
+
+p {
+  padding: 40px 0;
+}
+
+.gatsby-image-wrapper {
 }
 
 .heading {

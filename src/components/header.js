@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
 
+import "normalize.css";
 import * as Styles from "./header.module.scss";
 
 const Header = () => {
@@ -41,7 +42,7 @@ const Header = () => {
         </ul>
       </nav>
       <div className={Styles.getQuote}>
-        <p>Get a quote!</p>
+        <h2>Get a quote!</h2>
       </div>
     </header>
   );

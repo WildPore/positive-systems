@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import Header from "./header.js";
 import Footer from "./footer.js";
 
+import "normalize.css";
 import * as Styles from "./layout.module.scss";
 
 const Layout = ({ pageTitle, children }) => {
@@ -22,7 +23,9 @@ const Layout = ({ pageTitle, children }) => {
       <title>
         {pageTitle} | {data.site.siteMetadata.title}
       </title>
-      <Header />
+      <header>
+        <Header />
+      </header>
       <main className={Styles.content}>
         <h1 className={Styles.heading}>{pageTitle}</h1>
         {children}
