@@ -20,10 +20,15 @@ body {
   margin: auto;
 }
 
+p {
+  padding: 40px 0;
+}
+
+.gatsby-image-wrapper {
+}
+
 .heading {
   color: #cca85b;
-  max-width: 60%;
-  padding: 1em 1em;
 }
 
 .nav-links {

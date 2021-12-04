@@ -1,5 +1,6 @@
 import * as React from "react";
 
+import "normalize.css";
 import * as Styles from "./footer.module.scss";
 
 const Footer = () => {
