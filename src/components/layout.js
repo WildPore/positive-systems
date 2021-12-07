@@ -26,10 +26,8 @@ const Layout = ({ pageTitle, children }) => {
       <header>
         <Header />
       </header>
-      <main className={Styles.content}>
-        <h1 className={Styles.heading}>{pageTitle}</h1>
-        {children}
-      </main>
+      <h1 className={Styles.h1}>{pageTitle}</h1>
+      <main>{children}</main>
       <Footer />
     </div>
   );

@@ -41,9 +41,10 @@ const Header = () => {
           </Link>
         </ul>
       </nav>
+      {/*
       <div className={Styles.getQuote}>
-        <h2>Get a quote!</h2>
-      </div>
+        <h1>Get a quote!</h1>
+      </div> */}
     </header>
   );
 };

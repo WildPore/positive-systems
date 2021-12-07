@@ -1,6 +1,12 @@
-$bg-color: #202020;
+@import "style.scss";
 
 .footer {
-  background-color: $bg-color;
-  padding: 1rem;
+  font-family: $font-nav;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+
+  margin: 0.5rem 1rem;
 }
