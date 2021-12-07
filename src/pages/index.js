@@ -1,23 +1,32 @@
-import * as React from 'react'
-import Layout from '../components/layout'
-import { StaticImage } from 'gatsby-plugin-image'
+import * as React from "react";
+import Layout from "../components/layout";
+import EmailCapture from "../components/emailcapture";
 
 const IndexPage = () => {
   return (
-    <Layout pageTitle="Home Page">
-      <p>There's nothing here yet.</p>
-      <ul>
-        <li>Design, probably in Figma and then figure out how to implement in Gatsby</li>
-        <li>Copy, which is partially blocked by design (need to finish wireframe</li>
-        <li>Connect hosting to domain</li>
-        <li>Is NameSilo a decent registar, or should that get migrated to something like Google Domains</li>
-      </ul>
-      <StaticImage
-        alt="Our gorgeous video wall."
-        src="../images/videowall.png" 
-      />
-    </Layout>
-  )
-}
+    <Layout pageTitle="Welcome!">
+      <p>
+        Positive Systems is the premier video wall rental company in the Pacific
+        Northwest.
+      </p>
+      <p>
+        With over 20 years of experience in live events, Positive Systems
+        provides high quality and high impact video walls to seriously enhance
+        your events, seminars, keynotes, worship, and/or whatever else you
+        doing.
+      </p>
+      <p>
+        We've done weddings and large outdoor festivals, gatherings of worship
+        and rodeos. Whatever kind of party your hosting, it won't suprise us,
+        and more importantly, we won't suprise you!{" "}
+      </p>
 
-export default IndexPage
+      <p>
+        Fill out the form below, and we'll get back to you as soon as we can!
+      </p>
+      <EmailCapture />
+    </Layout>
+  );
+};
+
+export default IndexPage;
