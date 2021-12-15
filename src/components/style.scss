@@ -1,57 +1,5 @@
-@use "sass:color";
 @import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Murecho:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap");
 
-$font-header: "Secular One";
-$font-nav: "Murecho";
-$font-text: "Readex Pro";
-
-$brand-color1: #ffffff;
-$brand-color2: #74ceb7;
-$brand-color3: #ffffcb;
-$brand-color4: #f5f14e;
-$brand-color5: #004056;
-
-$background: $brand-color1;
-$background-lighter-10: color.scale($background, $lightness: 10%);
-$background-lighter-20: color.scale($background, $lightness: 20%);
-$background-lighter-30: color.scale($background, $lightness: 30%);
-$background-lighter-40: color.scale($background, $lightness: 40%);
-$background-lighter-50: color.scale($background, $lightness: 50%);
-$background-lighter-60: color.scale($background, $lightness: 60%);
-$background-lighter-70: color.scale($background, $lightness: 70%);
-$background-lighter-80: color.scale($background, $lightness: 80%);
-$background-lighter-90: color.scale($background, $lightness: 90%);
-$background-darker-10: color.scale($background, $lightness: -10%);
-$background-darker-20: color.scale($background, $lightness: -20%);
-$background-darker-30: color.scale($background, $lightness: -30%);
-$background-darker-40: color.scale($background, $lightness: -40%);
-$background-darker-50: color.scale($background, $lightness: -50%);
-$background-darker-60: color.scale($background, $lightness: -60%);
-$background-darker-70: color.scale($background, $lightness: -70%);
-$background-darker-80: color.scale($background, $lightness: -80%);
-$background-darker-90: color.scale($background, $lightness: -90%);
-
-$text: black;
-$text-accent: white;
-
-$border-radius: 3px;
-
-$border-color: black;
-$border-color-accent: white;
-
-$shadow-color: #00000033;
-
-@mixin shadow {
-  box-shadow: 0px 2.1px 0.9px -4px rgba(0, 0, 0, 0.019),
-    0px 4px 2.1px -4px rgba(0, 0, 0, 0.028),
-    0px 5.5px 3.5px -4px rgba(0, 0, 0, 0.034),
-    0px 6.6px 5.2px -4px rgba(0, 0, 0, 0.04),
-    0px 7.5px 7.5px -4px rgba(0, 0, 0, 0.045),
-    0px 8.1px 10.6px -4px rgba(0, 0, 0, 0.05),
-    0px 8.5px 15.1px -4px rgba(0, 0, 0, 0.056),
-    0px 9px 21.9px -4px rgba(0, 0, 0, 0.062),
-    0px 10.1px 33.8px -4px rgba(0, 0, 0, 0.071),
-    0px 15px 60px -4px rgba(0, 0, 0, 0.09);
-}
+@import "~bootstrap/scss/bootstrap";

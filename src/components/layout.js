@@ -1,11 +1,11 @@
 import * as React from "react";
 import { useStaticQuery, graphql } from "gatsby";
+import { Container } from "react-bootstrap";
 
 import Header from "./header.js";
 import Footer from "./footer.js";
 
-import "normalize.css";
-import * as Styles from "./layout.module.scss";
+import "./style.scss";
 
 const Layout = ({ pageTitle, children }) => {
   const data = useStaticQuery(graphql`
@@ -19,17 +19,16 @@ const Layout = ({ pageTitle, children }) => {
   `);
 
   return (
-    <div className={Styles.container}>
+    <>
       <title>
         {pageTitle} | {data.site.siteMetadata.title}
       </title>
-      <header>
+      <Container>
         <Header />
-      </header>
-      <h1 className={Styles.h1}>{pageTitle}</h1>
-      <main>{children}</main>
-      <Footer />
-    </div>
+        <main>{children}</main>
+        <Footer />
+      </Container>
+    </>
   );
 };
 

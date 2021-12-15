@@ -47,6 +47,7 @@ __diff_output__/
 .idea/
 .vscode/
 *.sw*
+*.code-workspace
 
 # misc
 .serverless/
