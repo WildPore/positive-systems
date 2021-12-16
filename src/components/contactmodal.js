@@ -40,7 +40,7 @@ const ContactModal = () => {
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({ "form-name": "salesNotices", ...values }),
+        body: encode({ "form-name": "salesNotice", ...values }),
       })
         .then(() => {
           alert("Success");
@@ -71,7 +71,7 @@ const ContactModal = () => {
         </Modal.Header>
 
         <Modal.Body>
-          <Form onSubmit={formik.handleSubmit}>
+          <Form name="salesNotice" onSubmit={formik.handleSubmit}>
             <p>
               Leave us a message and your email address and we'll get back to
               you ASAP!
@@ -89,7 +89,11 @@ const ContactModal = () => {
         </Modal.Body>
         <Modal.Footer>
           <Container fluid>
-            <Form onSubmit={formik.handleSubmit} data-netlify={true}>
+            <Form
+              name="salesNotice"
+              onSubmit={formik.handleSubmit}
+              data-netlify={true}
+            >
               <InputGroup className="mb-3">
                 <Form.Control
                   id="name"
