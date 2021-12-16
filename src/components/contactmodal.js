@@ -71,10 +71,24 @@ const ContactModal = () => {
         </Modal.Header>
 
         <Modal.Body>
-          <Form name="salesNotice" onSubmit={formik.handleSubmit}>
+          <Form
+            name="salesNotice"
+            method="post"
+            onSubmit={formik.handleSubmit}
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+          >
             <p>
               Leave us a message and your email address and we'll get back to
               you ASAP!
+            </p>
+
+            <input type="hidden" name="form-name" value="salesNotice" />
+            <p hidden>
+              <label>
+                Don't fill this out:{" "}
+                <input name="bot-field" onChange={formik.handleChange} />
+              </label>
             </p>
 
             <Form.Control
@@ -85,50 +99,39 @@ const ContactModal = () => {
               value={formik.values.message}
               placeholder="Leave us a message"
             />
+
+            <InputGroup className="mb-3">
+              <Form.Control
+                id="name"
+                name="name"
+                type="name"
+                placeholder="Your name"
+                aria-label="Name"
+                aria-describedby="nameSubmit"
+                onChange={formik.handleChange}
+                value={formik.values.name}
+              />
+
+              <Form.Control
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Email address"
+                aria-label="Email address"
+                aria-describedby="emailSubmit"
+                onChange={formik.handleChange}
+                value={formik.values.email}
+              />
+
+              <Button
+                id="emailSubmit"
+                as="input"
+                type="submit"
+                value="Submit"
+              />
+            </InputGroup>
           </Form>
         </Modal.Body>
-        <Modal.Footer>
-          <Container fluid>
-            <Form
-              name="salesNotice"
-              onSubmit={formik.handleSubmit}
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
-            >
-              <input type="hidden" name="form-name" value="salesNotice" />
-              <InputGroup className="mb-3">
-                <Form.Control
-                  id="name"
-                  name="name"
-                  type="name"
-                  placeholder="Your name"
-                  aria-label="Name"
-                  aria-describedby="nameSubmit"
-                  onChange={formik.handleChange}
-                  value={formik.values.name}
-                />
-
-                <Form.Control
-                  id="email"
-                  name="email"
-                  type="email"
-                  placeholder="Email address"
-                  aria-label="Email address"
-                  aria-describedby="emailSubmit"
-                  onChange={formik.handleChange}
-                  value={formik.values.email}
-                />
-
-                <Button
-                  id="emailSubmit"
-                  as="input"
-                  type="submit"
-                  value="Submit"
-                />
-              </InputGroup>
-            </Form>
-          </Container>
-        </Modal.Footer>
       </Modal>
     </>
   );
