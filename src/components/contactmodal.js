@@ -92,8 +92,10 @@ const ContactModal = () => {
             <Form
               name="salesNotice"
               onSubmit={formik.handleSubmit}
-              data-netlify={true}
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
             >
+              <input type="hidden" name="form-name" value="salesNotice" />
               <InputGroup className="mb-3">
                 <Form.Control
                   id="name"
