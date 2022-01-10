@@ -3,7 +3,6 @@ import { useStaticQuery, graphql } from "gatsby";
 import { Container } from "react-bootstrap";
 
 import Header from "./header.js";
-import Footer from "./footer.js";
 
 import "./style.scss";
 
@@ -26,7 +25,6 @@ const Layout = ({ pageTitle, children }) => {
       <Container>
         <Header />
         <main>{children}</main>
-        <Footer />
       </Container>
     </>
   );
