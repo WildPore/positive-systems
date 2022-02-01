@@ -15,7 +15,7 @@ const ContactModal = () => {
       <Modal
         show={show}
         onHide={handleClose}
-        size="lg"
+        size="md"
         aria-labelledby="contained-modal-title-vcenter"
         centered
       >
@@ -30,6 +30,11 @@ const ContactModal = () => {
               sales@positivesystems.com
             </a>
           </p>
+          <p>
+            Call or leave us a message at{" "}
+            <a href="tel:2066795712">206-679-5712</a>
+          </p>
+          <p>We'll get back as soon as we possibly can!</p>
         </Modal.Body>
       </Modal>
     </>

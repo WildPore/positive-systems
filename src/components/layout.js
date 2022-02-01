@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import { Container } from "react-bootstrap";
+import { Container, Col, Row } from "react-bootstrap";
 
 import Header from "./header.js";
 
@@ -24,7 +24,15 @@ const Layout = ({ pageTitle, children }) => {
       </title>
       <Container>
         <Header />
-        <main>{children}</main>
+        <Row className="text-center">
+          <h1>{pageTitle}</h1>
+        </Row>
+        <span></span>
+        <Row className="justify-content-md-center">
+          <Col md={6}>
+            <main>{children}</main>
+          </Col>
+        </Row>
       </Container>
     </>
   );
