@@ -24,12 +24,12 @@ const Layout = ({ pageTitle, children }) => {
       </title>
       <Container>
         <Header />
+        <Container fluid="sm" className="spacer"></Container>
         <Row className="text-center">
           <h1>{pageTitle}</h1>
         </Row>
-        <span></span>
-        <Row className="justify-content-md-center">
-          <Col md={6}>
+        <Row className="justify-content-sm-center">
+          <Col md={7}>
             <main>{children}</main>
           </Col>
         </Row>

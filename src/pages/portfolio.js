@@ -4,10 +4,10 @@ import Layout from "../components/layout";
 const PortfolioPage = () => {
   return (
     <Layout pageTitle="Our Work">
-      <h1>Subtronics</h1>
+      <h2>Subtronics</h2>
       <p>We helped to kickstart the Subtronics tour etc etc.</p>
       <p>What did we do to make this show work?</p>
-      <h1>Moonlight Masquerade</h1>
+      <h2>Moonlight Masquerade</h2>
       <p>
         The promotional text for Moonlight Masquerade should be quoted here.
       </p>
