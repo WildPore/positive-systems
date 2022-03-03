@@ -7,9 +7,9 @@ import { Container, Row, Col, Table, Button } from "react-bootstrap";
 
 import * as productStyle from "./productStyle.module.scss";
 
-import tileSpecSheet from "../../../documents/PolarisTileSpecSheet.pdf";
-import panelSpecSheet from "../../../documents/PolarisPanelSpecSheet.pdf";
-import promoFlyer from "../../../documents/PolarisPromoFlyer.pdf";
+import tileSpecSheet from "../../../documents/AT5TileSpecSheet.pdf";
+import panelSpecSheet from "../../../documents/AT5PanelSpecSheet.pdf";
+import promoFlyer from "../../../documents/AT5PromoFlyer.pdf";
 
 const Polaris = () => {
   return (
@@ -17,7 +17,7 @@ const Polaris = () => {
       <Container fluid="lg" className={productStyle.container}>
         <Row className={productStyle.headingContainer}>
           <Col md={{ offset: 2, span: 8 }} lg={{ offset: 3, span: 6 }}>
-            <h1 className={productStyle.heading}>Absen Polaris 3.9 Pro</h1>
+            <h1 className={productStyle.heading}>Absen AT5</h1>
           </Col>
         </Row>
         <Row>
@@ -31,9 +31,7 @@ const Polaris = () => {
             <h2 className={productStyle.sectionHeading}>Product Description</h2>
             <ul>
               <li>
-                <span className={productStyle.listSpacing}>
-                  Magnets and an easy locking system allow for quick assembly.
-                </span>
+                Magnets and an easy locking system allow for quick assembly.
               </li>
               <li>
                 Lightweight carbon fiber frame allows for bigger walls under
@@ -61,22 +59,22 @@ const Polaris = () => {
                 </tr>
                 <tr>
                   <td>Pixel Pitch</td>
-                  <td colSpan={2}>3.9mm</td>
+                  <td colSpan={2}>5.55mm</td>
                 </tr>
                 <tr>
                   <td>Panel Dimensions (WxHxD, mm)</td>
-                  <td>500x500x87</td>
-                  <td>500x1000x87</td>
+                  <td>600x600x84</td>
+                  <td>600x1200x84</td>
                 </tr>
                 <tr>
                   <td>Pixels per Panel</td>
-                  <td>128x128</td>
-                  <td>128x256</td>
+                  <td>108x108</td>
+                  <td>108x216</td>
                 </tr>
                 <tr>
                   <td>Panel Weight</td>
-                  <td>9.6kg (~21lbs)</td>
-                  <td>13.7kg (~30lbs)</td>
+                  <td>7.5kg (~16.5lbs)</td>
+                  <td>13.5kg (~30lbs)</td>
                 </tr>
                 <tr>
                   <td>Panel Support Options</td>

@@ -4,17 +4,12 @@ import * as indexStyling from "./index.module.scss";
 
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import CardGroup from "react-bootstrap/CardGroup";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
 import Layout from "../components/layout";
 import LandingPageCarousel from "../components/landing-page-carousel";
-
-import LandingCarousel from "../components/landingPage/LandingCarousel";
-
-import LandingCard from "../components/card/LandingCard";
 
 const IndexPage = () => {
   return (
@@ -73,16 +68,6 @@ const IndexPage = () => {
             </Card>
           </Col>
         </Row>
-      </Container>
-      <LandingCarousel />
-
-      <Container>
-        <LandingCard
-          cardTitle={"Absen Polaris 3.9 Pro"}
-          cardText={
-            "Comfortable both indoors and outdoors with an IP65 rating. A 3.9mm pixel pitch means stunning clarity and color at close ranges as well as at a distance."
-          }
-        />
       </Container>
     </Layout>
   );

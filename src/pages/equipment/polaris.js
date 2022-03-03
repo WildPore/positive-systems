@@ -29,14 +29,23 @@ const Polaris = () => {
           </Col>
           <Col sm lg={{ span: 5 }}>
             <h2 className={productStyle.sectionHeading}>Product Description</h2>
-            <p>
-              Half meter by meter design, magnets, and an easy locking system
-              allow for quick assembly. Full and half panels can be used
-              together allowing for greater flexibility in design. High contrast
-              black LED pixels provide the best possible image. Supports curved
-              designs, 7 degrees convex, 10 degrees concave. Option to hang to
-              10m or groundstack to 4m.
-            </p>
+            <ul>
+              <li>
+                Half meter by meter design, magnets, and an easy locking system
+                allow for quick assembly.
+              </li>
+              <li>
+                Full and half panels can be used together allowing for greater
+                flexibility in design.
+              </li>
+              <li>
+                High contrast black LED pixels provide the best possible image.
+              </li>
+              <li>
+                Supports curved designs, 7 degrees convex, 10 degrees concave.
+              </li>
+              <li>Option to hang to 10m or groundstack to 4m.</li>
+            </ul>
             <h2 className={productStyle.sectionHeading}>Product Details</h2>
             <Table striped bordered hover>
               <thead>

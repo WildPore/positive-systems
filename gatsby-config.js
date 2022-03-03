@@ -2,6 +2,20 @@ module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
     title: "Positive Systems",
+    menuLinks: [
+      {
+        name: "home",
+        link: "/",
+      },
+      {
+        name: "Absen PL3.9",
+        link: "/equipment/polaris",
+      },
+      {
+        name: "Absen AT5",
+        link: "/equipment/at5",
+      },
+    ],
   },
   plugins: [
     "gatsby-plugin-image",

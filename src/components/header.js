@@ -1,5 +1,6 @@
 import * as React from "react";
-import { Nav, NavDropdown, Navbar } from "react-bootstrap";
+import { Link } from "gatsby";
+import { Container, Nav, NavDropdown, Navbar } from "react-bootstrap";
 
 import ContactModal from "./contactmodal.js";
 
@@ -8,29 +9,39 @@ import * as headerStyles from "./header.module.scss";
 const Header = () => {
   return (
     <Navbar className={headerStyles.navbar} expand="lg">
-      <Navbar.Brand href="#home">Positive Systems</Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="me-auto">
-          <Nav.Link href="/">Home</Nav.Link>
-          <Nav.Link href="/about">About</Nav.Link>
+      <Container>
+        <Navbar.Brand>
+          <Link className={headerStyles.link} to="/">
+            Positive Systems
+          </Link>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <NavDropdown title="Equipment" id="equipment-nav-dropdown">
+              <Link to="/equipment/polaris" className={headerStyles.link}>
+                <NavDropdown.Item as="span">Absen PL3.9</NavDropdown.Item>
+              </Link>
+              <Link to="/equipment/at5" className={headerStyles.link}>
+                <NavDropdown.Item as="span">Absen AT5</NavDropdown.Item>
+              </Link>
+            </NavDropdown>
 
-          <NavDropdown title="Equipment" id="equipment-nav-dropdown">
-            <NavDropdown.Item href="/equipment">Absen PL3.9</NavDropdown.Item>
-            <NavDropdown.Item href="/equipment">Absen AT5</NavDropdown.Item>
-            <NavDropdown.Item href="/equipment">MJ4</NavDropdown.Item>
-          </NavDropdown>
+            <NavDropdown title="Our Work" id="events-nav-dropdown">
+              <Link to="/portfolio" as={headerStyles.link}>
+                <NavDropdown.Item as="span">Freaky Deaky</NavDropdown.Item>
+              </Link>
+              <Link to="/portfolio" as={headerStyles.link}>
+                <NavDropdown.Item as="span">Boo!</NavDropdown.Item>
+              </Link>
+            </NavDropdown>
+          </Nav>
 
-          <NavDropdown title="Events" id="events-nav-dropdown">
-            <NavDropdown.Item href="/portfolio">Freaky Deaky</NavDropdown.Item>
-            <NavDropdown.Item href="/portfolio">Boo!</NavDropdown.Item>
-          </NavDropdown>
-        </Nav>
-
-        <div className="d-grid gap-2">
-          <ContactModal />
-        </div>
-      </Navbar.Collapse>
+          <div className="d-grid gap-2">
+            <ContactModal />
+          </div>
+        </Navbar.Collapse>
+      </Container>
     </Navbar>
   );
 };
