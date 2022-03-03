@@ -1,0 +1,52 @@
+@use "sass:math";
+
+:root {
+  --shadow-color: 0deg 0% 45%;
+  --shadow-elevation-low: 0.2px 0.7px 0.9px hsl(var(--shadow-color) / 0.36),
+    0.3px 1.4px 1.8px -0.9px hsl(var(--shadow-color) / 0.47),
+    0.8px 3.6px 4.6px -1.7px hsl(var(--shadow-color) / 0.57);
+  --shadow-elevation-medium: 0.2px 0.7px 0.9px hsl(var(--shadow-color) / 0.31),
+    0.6px 2.6px 3.3px -0.4px hsl(var(--shadow-color) / 0.36),
+    1.1px 5px 6.3px -0.9px hsl(var(--shadow-color) / 0.41),
+    2.1px 9.7px 12.3px -1.3px hsl(var(--shadow-color) / 0.46),
+    3.9px 18.2px 23px -1.7px hsl(var(--shadow-color) / 0.52);
+  --shadow-elevation-high: 0.2px 0.7px 0.9px hsl(var(--shadow-color) / 0.28),
+    1.3px 6.1px 7.7px -0.2px hsl(var(--shadow-color) / 0.31),
+    2.4px 11.1px 14.1px -0.4px hsl(var(--shadow-color) / 0.33),
+    3.5px 16.5px 20.9px -0.6px hsl(var(--shadow-color) / 0.36),
+    5px 23.3px 29.5px -0.8px hsl(var(--shadow-color) / 0.38),
+    6.9px 32.4px 41px -1px hsl(var(--shadow-color) / 0.41),
+    9.5px 44.6px 56.4px -1.2px hsl(var(--shadow-color) / 0.43),
+    13px 60.9px 77.1px -1.4px hsl(var(--shadow-color) / 0.46),
+    17.5px 82.2px 104px -1.6px hsl(var(--shadow-color) / 0.48),
+    23.3px 109.2px 138.2px -1.7px hsl(var(--shadow-color) / 0.5);
+}
+
+.productDisplay {
+  width: 70%;
+  padding: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  border-radius: 1rem * math.div(2, 3);
+  box-shadow: var(--shadow-elevation-high);
+}
+
+.productDisplay__image {
+  padding: 0;
+  margin: 0;
+  border-radius: 1rem * math.div(2, 3);
+}
+
+.title {
+  text-decoration: underline;
+}
+
+.buttonContainer {
+  padding: 1rem;
+}
+
+.button {
+  bottom: 0;
+  right: 0;
+  box-shadow: var(--shadow-elevation-medium);
+}

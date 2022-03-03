@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Button, Form, InputGroup, Modal } from "react-bootstrap";
+import { Button, Modal } from "react-bootstrap";
 
 const ContactModal = () => {
   const [show, setShow] = React.useState(false);

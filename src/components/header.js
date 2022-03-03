@@ -1,13 +1,13 @@
 import * as React from "react";
-import { Container, Nav, NavDropdown, Navbar } from "react-bootstrap";
+import { Nav, NavDropdown, Navbar } from "react-bootstrap";
 
 import ContactModal from "./contactmodal.js";
 
-import "./style.scss";
+import * as headerStyles from "./header.module.scss";
 
 const Header = () => {
   return (
-    <Navbar expand="lg">
+    <Navbar className={headerStyles.navbar} expand="lg">
       <Navbar.Brand href="#home">Positive Systems</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
