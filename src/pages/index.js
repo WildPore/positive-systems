@@ -24,10 +24,10 @@ const IndexPage = () => {
         </p>
       </Container>
 
-      <Container>
+      <Container fluid>
         <Row>
-          <Col>
-            <Card style={{ width: "18rem" }}>
+          <Col md>
+            <Card className={indexStyling.card}>
               <Card.Img variant="top" src="https://picsum.photos/600/300" />
               <Card.Body>
                 <Card.Title>Absen Polaris 3.9 Pro</Card.Title>
@@ -40,8 +40,8 @@ const IndexPage = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col>
-            <Card style={{ width: "18rem" }}>
+          <Col md>
+            <Card className={indexStyling.card}>
               <Card.Img variant="top" src="https://picsum.photos/600/300" />
               <Card.Body>
                 <Card.Title>Absen AT5 Pro</Card.Title>
@@ -54,8 +54,8 @@ const IndexPage = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col>
-            <Card style={{ width: "18rem" }}>
+          <Col md>
+            <Card className={indexStyling.card}>
               <Card.Img variant="top" src="https://picsum.photos/600/300" />
               <Card.Body>
                 <Card.Title>Processors and Scalers</Card.Title>
