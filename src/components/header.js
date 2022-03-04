@@ -18,7 +18,7 @@ const Header = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <NavDropdown title="Equipment" id="equipment-nav-dropdown">
+            <NavDropdown title="Our Equipment" id="equipment-nav-dropdown">
               <Link to="/equipment/polaris" className={headerStyles.link}>
                 <NavDropdown.Item as="span">Absen PL3.9</NavDropdown.Item>
               </Link>
@@ -27,12 +27,21 @@ const Header = () => {
               </Link>
             </NavDropdown>
 
-            <NavDropdown title="Our Work" id="events-nav-dropdown">
-              <Link to="/portfolio" className={headerStyles.link}>
-                <NavDropdown.Item as="span">Freaky Deaky</NavDropdown.Item>
+            <NavDropdown title="What We Do" id="events-nav-dropdown">
+              <Link to="/events/corporate" className={headerStyles.link}>
+                <NavDropdown.Item as="span">
+                  Corporate and Special Events
+                </NavDropdown.Item>
               </Link>
-              <Link to="/portfolio" className={headerStyles.link}>
-                <NavDropdown.Item as="span">Boo!</NavDropdown.Item>
+              <Link to="/events/concerts" className={headerStyles.link}>
+                <NavDropdown.Item as="span">
+                  Concerts, Festivals, and Tours
+                </NavDropdown.Item>
+              </Link>
+              <Link to="/events/production" className={headerStyles.link}>
+                <NavDropdown.Item as="span">
+                  Full Production Services
+                </NavDropdown.Item>
               </Link>
             </NavDropdown>
           </Nav>

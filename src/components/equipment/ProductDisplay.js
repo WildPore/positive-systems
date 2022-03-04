@@ -13,10 +13,7 @@ const ProductDisplay = (props) => {
       <Row>
         <Col></Col>
         <Col>
-          <Row>
-            <h2 className={productDisplayStyle.title}>{props.title}</h2>
-            <p className={productDisplayStyle.text}>{props.text}</p>
-          </Row>
+          <Row></Row>
         </Col>
       </Row>
       <Row className={productDisplayStyle.buttonContainer}>
