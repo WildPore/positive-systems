@@ -25,6 +25,11 @@ const Header = () => {
               <Link to="/equipment/at5" className={headerStyles.link}>
                 <NavDropdown.Item as="span">Absen AT5</NavDropdown.Item>
               </Link>
+              <Link to="/equipment/processing" className={headerStyles.link}>
+                <NavDropdown.Item as="span">
+                  Scaling and Processing Solutions
+                </NavDropdown.Item>
+              </Link>
             </NavDropdown>
 
             <NavDropdown title="What We Do" id="events-nav-dropdown">

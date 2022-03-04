@@ -1,6 +1,5 @@
 import * as React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import * as indexStyling from "./index.module.scss";
+import { Link } from "gatsby";
 
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
@@ -10,6 +9,9 @@ import Row from "react-bootstrap/Row";
 
 import Layout from "../components/layout";
 import LandingPageCarousel from "../components/landing-page-carousel";
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import * as indexStyling from "./index.module.scss";
 
 const IndexPage = () => {
   return (
@@ -28,7 +30,9 @@ const IndexPage = () => {
         <Row>
           <Col md>
             <Card className={indexStyling.card}>
-              <Card.Img variant="top" src="https://picsum.photos/600/300" />
+              <Link to="/equipment/polaris">
+                <Card.Img variant="top" src="https://picsum.photos/600/300" />
+              </Link>
               <Card.Body>
                 <Card.Title>Absen Polaris 3.9 Pro</Card.Title>
                 <Card.Text>
@@ -36,13 +40,17 @@ const IndexPage = () => {
                   3.9mm pixel pitch means stunning clarity and color at close
                   ranges as well as at a distance.
                 </Card.Text>
-                <Button variant="primary">Learn more</Button>
+                <Link to="/equipment/polaris">
+                  <Button variant="primary">Learn more</Button>
+                </Link>
               </Card.Body>
             </Card>
           </Col>
           <Col md>
             <Card className={indexStyling.card}>
-              <Card.Img variant="top" src="https://picsum.photos/600/300" />
+              <Link to="/equipment/at5">
+                <Card.Img variant="top" src="https://picsum.photos/600/300" />
+              </Link>
               <Card.Body>
                 <Card.Title>Absen AT5 Pro</Card.Title>
                 <Card.Text>
@@ -50,20 +58,26 @@ const IndexPage = () => {
                   for a lightweight indoor wall or a sturdy outdoor wall with an
                   IP65 rating.
                 </Card.Text>
-                <Button variant="primary">Learn more</Button>
+                <Link to="/equipment/at5">
+                  <Button variant="primary">Learn more</Button>
+                </Link>
               </Card.Body>
             </Card>
           </Col>
           <Col md>
             <Card className={indexStyling.card}>
-              <Card.Img variant="top" src="https://picsum.photos/600/300" />
+              <Link to="/equipment/processing">
+                <Card.Img variant="top" src="https://picsum.photos/600/300" />
+              </Link>
               <Card.Body>
                 <Card.Title>Processors and Scalers</Card.Title>
                 <Card.Text>
                   A full suite of processing and scaling solutions to easily
                   serve your content on the big screen.
                 </Card.Text>
-                <Button variant="primary">Learn more</Button>
+                <Link to="/equipment/processing">
+                  <Button variant="primary">Learn more</Button>
+                </Link>
               </Card.Body>
             </Card>
           </Col>
