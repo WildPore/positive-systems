@@ -14,9 +14,9 @@ import promoFlyer from "../../../documents/AT5PromoFlyer.pdf";
 const Polaris = () => {
   return (
     <Layout>
-      <Container fluid="lg" className={productStyle.container}>
+      <Container fluid="lg">
         <Row className={productStyle.headingContainer}>
-          <Col md={{ offset: 2, span: 8 }} lg={{ offset: 3, span: 6 }}>
+          <Col md={{ span: 12 }} lg={{ offset: 3, span: 6 }}>
             <h1 className={productStyle.heading}>Absen AT5</h1>
           </Col>
         </Row>

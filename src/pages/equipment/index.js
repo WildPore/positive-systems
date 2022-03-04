@@ -1,8 +1,5 @@
 import React from "react";
 
-import { graphql } from "gatsby";
-
-import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
 import Button from "react-bootstrap/Button";

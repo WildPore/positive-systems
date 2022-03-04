@@ -28,10 +28,10 @@ const Header = () => {
             </NavDropdown>
 
             <NavDropdown title="Our Work" id="events-nav-dropdown">
-              <Link to="/portfolio" as={headerStyles.link}>
+              <Link to="/portfolio" className={headerStyles.link}>
                 <NavDropdown.Item as="span">Freaky Deaky</NavDropdown.Item>
               </Link>
-              <Link to="/portfolio" as={headerStyles.link}>
+              <Link to="/portfolio" className={headerStyles.link}>
                 <NavDropdown.Item as="span">Boo!</NavDropdown.Item>
               </Link>
             </NavDropdown>

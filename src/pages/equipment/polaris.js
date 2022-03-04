@@ -14,9 +14,9 @@ import promoFlyer from "../../../documents/PolarisPromoFlyer.pdf";
 const Polaris = () => {
   return (
     <Layout>
-      <Container fluid="lg" className={productStyle.container}>
+      <Container fluid="lg">
         <Row className={productStyle.headingContainer}>
-          <Col md={{ offset: 2, span: 8 }} lg={{ offset: 3, span: 6 }}>
+          <Col md={{ span: 12 }} lg={{ offset: 3, span: 6 }}>
             <h1 className={productStyle.heading}>Absen Polaris 3.9 Pro</h1>
           </Col>
         </Row>
@@ -25,6 +25,7 @@ const Polaris = () => {
             <StaticImage
               className="rounded"
               src="https://picsum.photos/500/800"
+              alt="Photo of an Absen Polaris 3.9 Pro panel"
             />
           </Col>
           <Col sm lg={{ span: 5 }}>
