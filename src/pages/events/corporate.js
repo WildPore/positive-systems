@@ -15,23 +15,18 @@ const Corporate = () => {
           <Col className="text-center">
             <StaticImage
               className="rounded"
-              src="https://picsum.photos/1200/600"
-              alt="A stunning event photo"
+              src="../../../images/big_groundstack.jpg"
+              alt="A large, groundstacked wall that we built for a fundraising event."
             />
           </Col>
           <Col lg>
-            <h2>We're not bad!</h2>
-            <p>
-              High quality events that make you go "alright". We have it all.
-              Positive Systems has large panels, small panels, all in mostly
-              working condition. We try our best to make sure that you remember
-              us for good reasons!
-            </p>
+            <h2>Childhood Diabetes Fundraiser</h2>
+            <p></p>
             <h2>Equipment Used:</h2>
             <ul>
-              <li>Video wall</li>
-              <li>Cables</li>
-              <li>Love</li>
+              <li>Absen PL3.9</li>
+              <li>Groundstack Support System</li>
+              <li>4K Video Processors</li>
             </ul>
           </Col>
         </Row>
@@ -39,12 +34,34 @@ const Corporate = () => {
           <Col className="text-center" md lg={{ order: "last" }}>
             <StaticImage
               className="rounded"
-              src="https://picsum.photos/1200/600"
-              alt="A stunning event photo"
+              src="../../../images/amazon_rings.jpg"
+              alt="A mirror-ball with 2 rings 'orbiting' it with our MJ5 video curtain attached on the outside face."
             />
           </Col>
           <Col md={{ span: 12 }} lg={{ span: true, order: "first" }}>
-            <p>Filler text for a second.</p>
+            <h2>Amazon Holiday Party</h2>
+            <p>
+              Using our special MJ5 video curtain, we were able to wrap it
+              around circular truss to make this stunning and unique set-piece
+              for Amazon's Winter Holiday Party. The MJ5 is extremely
+              lightweight, allowing it to drap or be affixed to a truss with
+              simple zipties.
+            </p>
+            <h2>Equipment Used:</h2>
+            <ul>
+              <li>
+                MJ5 - a lightweight video curtain that is perfect for decor and
+                ambiance
+              </li>
+              <li>
+                Circular Truss - these were rigged so that they would "orbit"
+                the mirror ball in the middle
+              </li>
+              <li>
+                Zipties - it's really all that's needed to tie the MJ5 off to
+                truss, it is that light
+              </li>
+            </ul>
           </Col>
         </Row>
       </Container>
