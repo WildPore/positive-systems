@@ -15,8 +15,8 @@ const Production = () => {
           <Col className="text-center">
             <StaticImage
               className="rounded"
-              src="https://picsum.photos/1200/600"
-              alt="A stunning event photo"
+              src="../../../images/moonlight_design.jpg"
+              alt="A composite image of a design's stage plot, and the stage that was built from said design."
             />
           </Col>
           <Col lg>
@@ -39,8 +39,8 @@ const Production = () => {
           <Col className="text-center" md lg={{ order: "last" }}>
             <StaticImage
               className="rounded"
-              src="https://picsum.photos/1200/600"
-              alt="A stunning event photo"
+              src="../../../images/large_design.jpg"
+              alt="A complex design that we took from idea to reality. The design was our work and then we managed production to build the stage."
             />
           </Col>
           <Col md={{ span: 12 }} lg={{ span: true, order: "first" }}>

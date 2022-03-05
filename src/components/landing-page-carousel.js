@@ -9,7 +9,7 @@ const LandingPageCarousel = () => {
   return (
     <Carousel>
       <Carousel.Item interval={4000}>
-        <Link to="/about">
+        <Link to="/events/corporate">
           <StaticImage
             src="../images/carousel/radiostation.png"
             alt="Our video wall at an event for a local radio station."
@@ -27,7 +27,7 @@ const LandingPageCarousel = () => {
         </Link>
       </Carousel.Item>
       <Carousel.Item interval={4000}>
-        <Link to="/about">
+        <Link to="/events/concerts">
           <StaticImage
             src="../images/carousel/deadbeats.png"
             alt="Our video wall at an event for a local radio station."
@@ -45,7 +45,7 @@ const LandingPageCarousel = () => {
         </Link>
       </Carousel.Item>
       <Carousel.Item interval={4000}>
-        <Link to="/about">
+        <Link to="/events/production">
           <StaticImage
             src="../images/carousel/videowall.png"
             alt="Our video wall at an event for a local radio station."

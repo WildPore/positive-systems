@@ -15,8 +15,8 @@ const Concerts = () => {
           <Col className="text-center">
             <StaticImage
               className="rounded"
-              src="https://picsum.photos/1200/600"
-              alt="A stunning event photo"
+              src="../../../images/will_parks.jpg"
+              alt="An EDM event photo."
             />
           </Col>
           <Col lg>
@@ -39,8 +39,8 @@ const Concerts = () => {
           <Col className="text-center" md lg={{ order: "last" }}>
             <StaticImage
               className="rounded"
-              src="https://picsum.photos/1200/600"
-              alt="A stunning event photo"
+              src="../../../images/sasquatch_dance_tent.jpg"
+              alt="A large, complex stage that we designed and then built."
             />
           </Col>
           <Col md={{ span: 12 }} lg={{ span: true, order: "first" }}>
