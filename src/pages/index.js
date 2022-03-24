@@ -12,6 +12,7 @@ import LandingPageCarousel from "../components/landing-page-carousel";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import * as indexStyling from "./index.module.scss";
+import { StaticImage } from "gatsby-plugin-image";
 
 const IndexPage = () => {
   return (
@@ -31,7 +32,11 @@ const IndexPage = () => {
           <Col md>
             <Card className={indexStyling.card}>
               <Link to="/equipment/polaris">
-                <Card.Img variant="top" src="https://picsum.photos/600/300" />
+                <StaticImage
+                  className="card-img-top"
+                  src="../../images/polaris_card.png"
+                  alt="Link to the product page for the Absen Polaris 3.9 Pro"
+                />
               </Link>
               <Card.Body>
                 <Card.Title>Absen Polaris 3.9 Pro</Card.Title>
@@ -49,7 +54,11 @@ const IndexPage = () => {
           <Col md>
             <Card className={indexStyling.card}>
               <Link to="/equipment/at5">
-                <Card.Img variant="top" src="https://picsum.photos/600/300" />
+                <StaticImage
+                  className="card-img-top"
+                  src="../../images/at5_card.png"
+                  alt="Link to the product page for the Absen Altair AT5"
+                />
               </Link>
               <Card.Body>
                 <Card.Title>Absen AT5 Pro</Card.Title>
@@ -67,7 +76,11 @@ const IndexPage = () => {
           <Col md>
             <Card className={indexStyling.card}>
               <Link to="/equipment/processing">
-                <Card.Img variant="top" src="https://picsum.photos/600/300" />
+                <StaticImage
+                  className="card-img-top"
+                  src="../../images/novastar_card.png"
+                  alt="Link to the product page for our processing and scaling solutions"
+                />
               </Link>
               <Card.Body>
                 <Card.Title>Processors and Scalers</Card.Title>

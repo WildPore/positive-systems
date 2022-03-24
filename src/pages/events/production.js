@@ -20,31 +20,16 @@ const Production = () => {
             />
           </Col>
           <Col lg>
-            <h2>We're not bad!</h2>
             <p>
-              High quality events that make you go "alright". We have it all.
-              Positive Systems has large panels, small panels, all in mostly
-              working condition. We try our best to make sure that you remember
-              us for good reasons!
+              Positive Systems strives to create unique and compelling designs
+              to take your concert, presentation, or event to the next level. We
+              believe in immersing your audience and engaging your community
+              with unforgettable experiences. Our team of experts have a wealth
+              of experience in the full production process and can take your
+              show from concept to the stage. Whether you're looking to create
+              an unforgettable event or simply improve the quality of your
+              production, Positive Systems is here to help.
             </p>
-            <h2>Equipment Used:</h2>
-            <ul>
-              <li>Video wall</li>
-              <li>Cables</li>
-              <li>Love</li>
-            </ul>
-          </Col>
-        </Row>
-        <Row className={eventStyle.altRow}>
-          <Col className="text-center" md lg={{ order: "last" }}>
-            <StaticImage
-              className="rounded"
-              src="../../../images/large_design.jpg"
-              alt="A complex design that we took from idea to reality. The design was our work and then we managed production to build the stage."
-            />
-          </Col>
-          <Col md={{ span: 12 }} lg={{ span: true, order: "first" }}>
-            <p>Filler text for a second.</p>
           </Col>
         </Row>
       </Container>

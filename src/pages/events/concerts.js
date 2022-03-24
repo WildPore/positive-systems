@@ -20,22 +20,21 @@ const Concerts = () => {
             />
           </Col>
           <Col lg>
-            <h2>We're not bad!</h2>
+            <h2>Guaranteed Positive Experience</h2>
             <p>
-              High quality events that make you go "alright". We have it all.
-              Positive Systems has large panels, small panels, all in mostly
-              working condition. We try our best to make sure that you remember
-              us for good reasons!
+              Positive Systems is experienced at providing large-scale video
+              production solutions for musical events, concerts, and tours. With
+              over 20 years of experience in this field, we are one of the
+              leading video wall companies in the Pacific Northwest. From small
+              events in intimate venues, to festivals with tens of thousands of
+              attendees, Positive Systems has the experience, equipment and
+              workforce for all types of shows. We will work with you to meet
+              your expectations and more, and we guarantee that your experience
+              with us will be positive.
             </p>
-            <h2>Equipment Used:</h2>
-            <ul>
-              <li>Video wall</li>
-              <li>Cables</li>
-              <li>Love</li>
-            </ul>
           </Col>
         </Row>
-        <Row className={eventStyle.altRow}>
+        <Row className={eventStyle.row}>
           <Col className="text-center" md lg={{ order: "last" }}>
             <StaticImage
               className="rounded"
@@ -44,7 +43,11 @@ const Concerts = () => {
             />
           </Col>
           <Col md={{ span: 12 }} lg={{ span: true, order: "first" }}>
-            <p>Filler text for a second.</p>
+            <StaticImage
+              className="rounded"
+              src="../../../images/large_design.jpg"
+              alt="A large, complex stage that we designed and then built."
+            />
           </Col>
         </Row>
       </Container>

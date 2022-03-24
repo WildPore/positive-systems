@@ -20,14 +20,16 @@ const Corporate = () => {
             />
           </Col>
           <Col lg>
-            <h2>Childhood Diabetes Fundraiser</h2>
-            <p></p>
-            <h2>Equipment Used:</h2>
-            <ul>
-              <li>Absen PL3.9</li>
-              <li>Groundstack Support System</li>
-              <li>4K Video Processors</li>
-            </ul>
+            <h2>Unique and Special Events</h2>
+            <p>
+              An LED video wall is a powerful way to step up any event, whether
+              it's a trade show, charity auction, or corporate presentation. At
+              our company, we can work with you to put a video wall into your
+              venue and get the maximum effect with the minimum stress on your
+              part. We'll make sure that your video wall rental is set up and
+              taken down quickly and efficiently, and that it looks great
+              throughout your event.
+            </p>
           </Col>
         </Row>
         <Row className={eventStyle.altRow}>
@@ -41,27 +43,12 @@ const Corporate = () => {
           <Col md={{ span: 12 }} lg={{ span: true, order: "first" }}>
             <h2>Amazon Holiday Party</h2>
             <p>
-              Using our special MJ5 video curtain, we were able to wrap it
-              around circular truss to make this stunning and unique set-piece
-              for Amazon's Winter Holiday Party. The MJ5 is extremely
-              lightweight, allowing it to drap or be affixed to a truss with
-              simple zipties.
+              Our company was thrilled to provide the video wall for the Amazon
+              Holiday Party. The event went off without a hitch, and the video
+              wall added an extra element of fun and excitement. We're always
+              happy to help make events like this a success, and we're grateful
+              to have such satisfied customers.
             </p>
-            <h2>Equipment Used:</h2>
-            <ul>
-              <li>
-                MJ5 - a lightweight video curtain that is perfect for decor and
-                ambiance
-              </li>
-              <li>
-                Circular Truss - these were rigged so that they would "orbit"
-                the mirror ball in the middle
-              </li>
-              <li>
-                Zipties - it's really all that's needed to tie the MJ5 off to
-                truss, it is that light
-              </li>
-            </ul>
           </Col>
         </Row>
       </Container>
