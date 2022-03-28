@@ -41,13 +41,11 @@ const Corporate = () => {
             />
           </Col>
           <Col md={{ span: 12 }} lg={{ span: true, order: "first" }}>
-            <h2>Amazon Holiday Party</h2>
             <p>
-              Our company was thrilled to provide the video wall for the Amazon
-              Holiday Party. The event went off without a hitch, and the video
-              wall added an extra element of fun and excitement. We're always
-              happy to help make events like this a success, and we're grateful
-              to have such satisfied customers.
+              Video wall adds an extra element of fun and excitement to any
+              event. Whether it's a large-scale backdrop or a small but dynamic
+              detail, we're happy to work with you to design the most impactful
+              look for your event.
             </p>
           </Col>
         </Row>

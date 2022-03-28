@@ -28,9 +28,8 @@ const Concerts = () => {
               leading video wall companies in the Pacific Northwest. From small
               events in intimate venues, to festivals with tens of thousands of
               attendees, Positive Systems has the experience, equipment and
-              workforce for all types of shows. We will work with you to meet
-              your expectations and more, and we guarantee that your experience
-              with us will be positive.
+              workforce for all types of shows. We will work with you to
+              guarantee that your experience with us will be positive.
             </p>
           </Col>
         </Row>
