@@ -5,6 +5,7 @@ import { Container, Nav, NavDropdown, Navbar } from "react-bootstrap";
 import ContactModal from "./contactmodal.js";
 
 import * as headerStyles from "./header.module.scss";
+import logoSVG from "../../images/ps_video_logo.svg";
 
 const Header = () => {
   return (
@@ -12,7 +13,11 @@ const Header = () => {
       <Container>
         <Navbar.Brand>
           <Link className={headerStyles.link} to="/">
-            Positive Systems
+            <img
+              className={headerStyles.logo}
+              src={logoSVG}
+              alt="Positive Systems"
+            />
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

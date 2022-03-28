@@ -23,6 +23,7 @@ module.exports = {
     "gatsby-transformer-sharp",
     "gatsby-plugin-mdx",
     "gatsby-plugin-sass",
+    "gatsby-plugin-styled-components",
     {
       resolve: `gatsby-plugin-sharp`,
       options: {

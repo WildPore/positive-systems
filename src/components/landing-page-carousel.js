@@ -30,7 +30,7 @@ const LandingPageCarousel = () => {
         <Link to="/events/concerts">
           <StaticImage
             src="../images/carousel/deadbeats.png"
-            alt="Our video wall at an event for a local radio station."
+            alt="A photo of a concert with a design featuring our video wall."
             placeholder="blurred"
             layout="constrained"
             aspectRatio={16 / 9}
@@ -47,8 +47,8 @@ const LandingPageCarousel = () => {
       <Carousel.Item interval={4000}>
         <Link to="/events/production">
           <StaticImage
-            src="../images/carousel/videowall.png"
-            alt="Our video wall at an event for a local radio station."
+            src="../../images/moonlight_design.jpg"
+            alt="A composite image of a design of a stage and the stage built at the show."
             placeholder="blurred"
             layout="constrained"
             aspectRatio={16 / 9}
